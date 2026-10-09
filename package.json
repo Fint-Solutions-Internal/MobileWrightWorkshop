@@ -1,0 +1,15 @@
+{
+  "name": "dummy",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "@browserstack/mobilewright": "^0.1.1",
+    "@mobilewright/test": "^0.0.62",
+    "@types/node": "^24.19.0",
+    "mobilewright": "^0.0.62",
+    "typescript": "^7.0.2"
+  },
+  "scripts": {
+    "test": "mobilewright test"
+  }
+}
