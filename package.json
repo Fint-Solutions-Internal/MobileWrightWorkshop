@@ -4,9 +4,9 @@
   "private": true,
   "devDependencies": {
     "@browserstack/mobilewright": "^0.1.1",
-    "@mobilewright/test": "^0.0.62",
+    "@mobilewright/test": "^0.0.64",
     "@types/node": "^24.19.0",
-    "mobilewright": "^0.0.62",
+    "mobilewright": "^0.0.64",
     "typescript": "^7.0.2"
   },
   "scripts": {
