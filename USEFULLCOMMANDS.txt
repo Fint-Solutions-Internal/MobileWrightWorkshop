@@ -67,6 +67,14 @@ Opens the most recent HTML report in your browser.
 
 npx mobilewright show-report
 
+##Command to install Claude code Checklist
+
+npm install -g @anthropic-ai/claude-code
+
+##Command to install Mobile wright MCP in Claude code
+
+npm install --save-dev mobilewright @mobilewright/test
+
 
 ## Checklist
 
