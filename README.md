@@ -48,27 +48,7 @@ Download as zip file from https://github.com/Fint-Solutions-Internal/MobileWrigh
 
 ### 3. Verify your setup with the Mobilewright CLI
 
-Run each of these commands before the workshop to make sure everything works end to end.
 
-| # | Command | What it does |
-| --- | --- | --- |
-| 1 | `npx mobilewright doctor` | Checks your environment (Node, Android SDK/`adb`, Xcode, simulators) and reports anything missing. |
-| 2 | `npx mobilewright devices` | Lists the connected devices, emulators and simulators Mobilewright can use. |
-| 3 | `npx mobilewright inspect` | Opens the inspector so you can browse the app's view tree and find locators. |
-| 4 | `npx mobilewright codegen` | Records your actions on the device and generates test code from them. |
-| 5 | `npx mobilewright test` | Runs the test suite in `tests/`. |
-| 6 | `npx mobilewright test --reporter html` | Runs the tests and generates an HTML report. |
-| 7 | `npx mobilewright show-report` | Opens the most recent HTML report in your browser. |
-
-Checklist:
-
-- [ ] `npx mobilewright doctor`
-- [ ] `npx mobilewright devices`
-- [ ] `npx mobilewright inspect`
-- [ ] `npx mobilewright codegen`
-- [ ] `npx mobilewright test`
-- [ ] `npx mobilewright test --reporter html`
-- [ ] `npx mobilewright show-report`
 
 > Start an Android emulator or iOS simulator **before** running `devices`, `inspect`, `codegen` or `test`.
 
