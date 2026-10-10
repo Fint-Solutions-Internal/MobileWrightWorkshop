@@ -4,49 +4,64 @@ Run each of these commands before the workshop to make sure everything works end
 Copy one command at a time, paste it into your terminal, and tick it off when it works.
 
 
-## 1. Check your setup
+##  Check your setup
 
 Checks your environment (Node, Android SDK/adb, Xcode, simulators) and reports anything missing.
 
 npx mobilewright doctor
 
 
-## 2. List devices
+##  List devices
 
 Lists the connected devices, emulators and simulators Mobilewright can use.
 
 npx mobilewright devices
 
+## To install Mobilewright
 
-## 3. Open the inspector
+npm init mobilewright@latest
+
+## To add Mobilewright to a project that already has a package.json, install it directly instead:
+
+npm install --save-dev mobilewright @mobilewright/test
+
+
+##  Open the inspector
 
 Opens the inspector so you can browse the app's view tree and find locators.
 
 npx mobilewright inspect
 
 
-## 4. Record a test
+##  Record a test
 
 Records your actions on the device and generates test code from them.
 
 npx mobilewright codegen
 
 
-## 5. Run the tests
+##  Run the tests
 
 Runs the test suite in tests/.
 
-npx mobilewright test
+To Run testcase in Android:
+npx mobilewright test AlertCheck.spec.ts --project=android
+
+To Run Testcase in ios:
+npx mobilewright test AlertCheck.spec.ts --project=ios
+
+To Run Both the testcase as parallel execution
+npx mobilewright test --project=android
 
 
-## 6. Run the tests with an HTML report
+##  Run the tests with an HTML report
 
 Runs the tests and generates an HTML report.
 
 npx mobilewright test --reporter html
 
 
-## 7. Open the report
+##  Open the report
 
 Opens the most recent HTML report in your browser.
 
